@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "name": "Cardigan 'Folklore'",
+    "price": 55000,
+    "description": "El cardigan de Taylor, de punto trenzado con estrellas bordadas en las mangas.",
+    "image": "/img/cardigan.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Baby Tee 'Short n' Sweet' de Sabrina Carpenter",
+    "price": 18000,
+    "description": "Baby Tee negra con estampa de Sabrina Carpenter.",
+    "image": "/img/sabrina-tee.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Gorra 'Pink Pony Club'",
+    "price": 25000,
+    "description": "Gorra negra Pink Pony Club, con visera curva y logo bordado en rosa.",
+    "image": "/img/ppc-gorra.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Vinilo 'Radical Optimism' Azul - Dua Lipa",
+    "price": 48000,
+    "description": "Edición limitada del vinilo en azul traslúcido de Dua Lipa.",
+    "image": "/img/dua-vinyl.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Taza de cerámica 'Espresso'",
+    "price": 9000,
+    "description": "Taza perfecta para tu espresso de la mañana, apta para microondas.",
+    "image": "/img/taza-espresso.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Llavero 'Pretty Girl Ave' - Sabrina Carpenter",
+    "price": 4500,
+    "description": "Llavero de acrílico rosa con forma de corazón.",
+    "image": "/img/sabrina-keychain.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Hoodie 'Midwest Princess Tour 2024'- Chappel Roan",
+    "price": 32000,
+    "description": "Buzo oversize rosa pastel con capucha, del tour 2024.",
+    "image": "/img/chappell-hoodie.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Vinilo 'Midnights' Jade Green de Taylor Swift",
+    "price": 50000,
+    "description": "Vinilo de edicion especial en color verde jade, incluye fotos exclusivas.",
+    "image": "/img/taylor-vinyl-jade.jpg"
+  }
+]

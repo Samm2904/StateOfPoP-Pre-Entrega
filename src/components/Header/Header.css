@@ -1,0 +1,52 @@
+Header {
+    background: rgb(241, 161, 192); 
+    backdrop-filter: blur(10px); 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 4rem;
+    border-bottom: 2px solid #ffccd5; 
+    position: sticky;
+    top: 0;
+    z-index: 1100; 
+}
+
+.logo-container a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    gap: 12px;
+    transition: transform 0.3s ease;
+}
+
+.logo-container a:hover {
+    transform: scale(1.05);
+}
+
+.logo-container img {
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0 0 8px rgba(114, 9, 183, 0.4));
+}
+
+.logo-container span {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem;
+    background: linear-gradient(45deg, #ff4d6d, #7209b7);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -1px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .logo-container span {
+        font-size: 1.5rem;
+    }
+}

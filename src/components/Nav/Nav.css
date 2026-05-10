@@ -1,0 +1,61 @@
+:root {
+    --pop-pink: #ff4d6d;
+    --pop-purple: #7209b7;
+    --pop-blue: #4361ee;
+    --pop-light-pink: #ffccd5;
+    --pop-bg: #f128bf;
+    --glass-bg: rgba(255, 255, 255, 0.8);
+}
+
+nav {
+    background: linear-gradient(90deg, var(--pop-pink), var(--pop-purple), var(--pop-blue));
+    padding: 1rem 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 3rem; 
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+
+.nav-list li a:hover {
+    background-color: var(--glass-bg);
+    color: var(--pop-purple);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.nav-list li a.active {
+    border-bottom: 3px solid white;
+}
+
+@media (max-width: 600px) {
+    .nav-list {
+        gap: 1.5rem;
+    }
+    
+    .nav-list li a {
+        font-size: 0.9rem;
+    }
+}

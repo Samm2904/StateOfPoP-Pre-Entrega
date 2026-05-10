@@ -1,0 +1,73 @@
+.card {
+    background: #e2dddd;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #f0f0f0;
+    cursor: pointer;
+    height: 100%; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(114, 9, 183, 0.15); 
+    border-color: #ffccd5;
+}
+
+.card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-size: 1.2rem;
+    margin: 10px 0;
+
+    display: -webkit-box;
+    line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card p:first-of-type {
+    font-size: 0.9rem;
+    color: #666;
+    line-height: 1.4;
+    margin-bottom: 15px;
+    flex-grow: 1; 
+}
+
+
+.card p:last-of-type {
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: #ff4d6d; 
+    margin: 10px 0;
+}
+
+
+.card button {
+    background: linear-gradient(45deg, #7209b7, #4361ee);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width: 100%;
+}
+
+.card button:hover {
+    opacity: 0.9;
+}
