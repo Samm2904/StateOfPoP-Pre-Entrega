@@ -59,3 +59,19 @@ nav {
         font-size: 0.9rem;
     }
 }
+
+.incart {
+    background-color: var(--pop-light-pink);
+    font-size: 0.8rem;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    width: 20px;
+    height: 20px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 0.75rem;
+}

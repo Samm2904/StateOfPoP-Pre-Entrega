@@ -49,12 +49,12 @@ export const CartProvider = ({children}) => {
     };
 
     const checkout = () => {
-        alert("Compra realziada con exito.");
+        alert("Compra realizada con exito!");
         clearCart();
         navigate("/");
     };
 
-   const values = {cart,addItem, removeItem, clearCart, getTotalItems, getCartTotal, checkout};
+   const values = {cart, addItem, removeItem, clearCart, getTotalItems, getCartTotal, checkout};
     return <CartContext.Provider value={values}>
         {children}
     </CartContext.Provider>
