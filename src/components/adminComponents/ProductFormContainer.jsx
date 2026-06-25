@@ -56,7 +56,7 @@ export const ProductFormContainer = () => {
                 description: "",
             });
             setFile(null);
-            navigate(`/success/${id}`, {replace: true});
+            navigate(`/admin/products/success/${id}`, {replace: true});
 
 
         }catch(error){

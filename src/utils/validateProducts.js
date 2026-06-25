@@ -13,9 +13,6 @@ export const validateProducts = (product) => {
     errors.description = "La descripción es obligatoria";
   }
 
-  if (!product.category.trim()) {
-    errors.category = "La categoria es obligatoria";
-  }
 
   if (!product.file) {
     errors.file = "Debes seleccionar una imagen";
