@@ -1,21 +1,25 @@
-export const validateProducts = (products) => {
-    const errors = {};
+export const validateProducts = (product) => {
+  const errors = {};
 
-    if (!products.name || products.name.trim() === "") {
-        errors.name = "El nombre del producto es obligatorio";
-    }
+  if (!product.name.trim()) {
+    errors.name = "El nombre es obligatorio";
+  }
 
-    if (!products.description || products.description.trim() === "") {
-        errors.description = "La descripción del producto es obligatoria";
-    }
+  if (!product.price || product.price <= 0) {
+    errors.price = "El precio debe ser mayor que 0";
+  }
 
-    if (!products.price || isNaN(products.price) || products.price <= 0) {
-        errors.price = "El precio del producto debe ser un número mayor a 0";
-    }
+  if (!product.description.trim()) {
+    errors.description = "La descripción es obligatoria";
+  }
 
-    if (!products.file || products.file.trim() === "") {
-        errors.file = "La imagen del producto es obligatoria";
-    }
+  if (!product.category.trim()) {
+    errors.category = "La categoria es obligatoria";
+  }
 
-    return errors;
+  if (!product.file) {
+    errors.file = "Debes seleccionar una imagen";
+  }
+
+  return errors;
 };

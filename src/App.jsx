@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import {Navigate, Route, Routes } from "react-router-dom";
 import './App.css'
 import { ItemListContainer } from "./components/ItemListContainer/ItemListContainer";
 import { ItemDetailContainer } from "./components/ItemDetailContainer/ItemDetailContainer";
@@ -7,6 +7,10 @@ import { ProductFormContainer } from "./components/adminComponents/productFormCo
 import { ProductSuccess } from "./components/adminComponents/ProductSuccess";
 import { PublicLayout } from "./layouts/PublicLayouts";
 import { AdminLayout } from "./layouts/AdminLayout";
+import { ProtectedRoute } from "./components/ProtectedRoute/ProtectedRoute";
+import { Dashboard } from "./components/adminComponents/Dashboard/Dashboard";
+import { Login } from "./components/Login/Login";
+
 
 function App() {
   return (
@@ -19,22 +23,23 @@ function App() {
           <Route path="/carrito" element={<CartView/>}/>
         </Route>
 
-        <Route path="/admin/login" element={<Login/>}/>
+       <Route path="/admin/login" element={<Login/>}/>  
 
-        <Route path="/admin" 
+              <Route
+          path="/admin"
           element={
             <ProtectedRoute>
-              <AdminLayout/>
+              <AdminLayout />
             </ProtectedRoute>
           }
-          >
-          <Route index element={<Navigate to={"dashboard"}/>}/>
-          <Route path="dashboard" element={<Dashboard/>}/>
-          <Route path="/products/new" element={<ProductFormContainer/>}/>
-          <Route path="products/success/:id" element={<ProductSuccess/>}/>
+        >
+          <Route index element={<Navigate to={"dashboard"} />} />
+          <Route path="dashboard" element={<Dashboard />} />
+
+          <Route path="products/new" element={<ProductFormContainer />} />
+          <Route path="products/success/:id" element={<ProductSuccess />} />
         </Route>
       </Routes>
-
     </>
   );
 }
