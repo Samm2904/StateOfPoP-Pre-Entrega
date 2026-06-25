@@ -19,6 +19,28 @@ export const getProducts = async (product) => {
     }
 };
 
+export const getProductById = async (id) => {
+  try {
+    // Creamos la referencia al documento
+    const productRef = doc(db, "products", id);
+
+    // Traemos el documento:
+    const snapshot = await getDoc(productRef);
+
+    // Verificamos si existe
+    if (snapshot.exists()) {
+      const product = { id: snapshot.id, ...snapshot.data() };
+      console.log("Doc:", product);
+      return product;
+    } else {
+      return null;
+    }
+  } catch (error) {
+    console.error("Error al traer producto por ID:", error);
+    return null;
+  }
+};
+
 export const createProduct = async (productData) => {
     try{
         const docRef = await addDoc(productsRef, productData); 
