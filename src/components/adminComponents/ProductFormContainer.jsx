@@ -30,7 +30,7 @@ export const ProductFormContainer = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
 
-        setErrors({});
+        setError({});
         setLoading(true);
 
         const newError = validateProducts({...product, file});
