@@ -1,7 +1,7 @@
 import "./ProductFormContainer.css";
 import {useNavigate} from "react-router-dom";
 import { useState } from "react";
-import { ProductFormUI } from "./productFormUI";
+import { ProductFormUI } from "./ProductFormUI";
 import { validateProducts } from "../../utils/validateProducts";
 import { uploadImage } from "../../services/uploadImages";
 import { createProduct } from "../../services/productsServices";
