@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState  } from "react";
 import { ItemDetail } from "../ItemDetail/ItemDetail";
-import { getProductById } from "../../services/productsService";
+import { getProductById } from "../../services/productsServices";
 
 export const ItemDetailContainer = () => {
    const{id} = useParams();
@@ -11,6 +11,7 @@ export const ItemDetailContainer = () => {
    
    
    useEffect(() => {
+    console.log("ID recibido:", id);
     getProductById(id)
       .then((data) => setItemDetail(data))
       .catch((err) => console.log(err))

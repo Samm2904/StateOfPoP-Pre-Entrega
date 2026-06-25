@@ -1,4 +1,4 @@
-import { collection, addDoc, getDocs, getDoc, query, where } from "firebase/firestore";
+import { collection, addDoc, getDocs, getDoc, doc, query, where } from "firebase/firestore";
 import { db } from "../firebase/config";
 
 const productsRef = collection(db, "products");
@@ -21,13 +21,9 @@ export const getProducts = async (product) => {
 
 export const getProductById = async (id) => {
   try {
-    // Creamos la referencia al documento
     const productRef = doc(db, "products", id);
-
-    // Traemos el documento:
     const snapshot = await getDoc(productRef);
 
-    // Verificamos si existe
     if (snapshot.exists()) {
       const product = { id: snapshot.id, ...snapshot.data() };
       console.log("Doc:", product);
