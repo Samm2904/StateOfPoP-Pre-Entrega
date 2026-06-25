@@ -3,18 +3,18 @@
   max-width: 720px;
   margin: 2rem auto;
   padding: 1.25rem 1.5rem;
-  background: #150e1f; /* Tono oscuro profundo, vibra pop de fondo */
-  color: #ffffff; /* Texto bien claro para contraste */
+  background: #150e1f; 
+  color: #ffffff; 
   border-radius: 12px;
-  box-shadow: 0 8px 16px rgba(255, 42, 133, 0.15); /* Sombra con un ligero tinte del color principal */
+  box-shadow: 0 8px 16px rgba(255, 42, 133, 0.15); 
 }
 
 /* Título */
 .product-form h2 {
   margin: 0 0 1rem 0;
   font-size: 1.6rem;
-  color: #ff2a85; /* Acento pop principal */
-  text-transform: uppercase; /* Opcional: le da un toque más de póster/revista pop */
+  color: #ff2a85; 
+  text-transform: uppercase; 
   letter-spacing: 1px;
 }
 
@@ -28,7 +28,7 @@
 /* Label + elementos */
 .product-form label {
   font-size: 0.95rem;
-  color: #e0d4f5; /* Un gris con tinte violeta/rosado en lugar de gris aburrido */
+  color: #e0d4f5; 
   font-weight: 500;
 }
 
@@ -39,16 +39,16 @@
 .product-form textarea {
   width: 100%;
   padding: 0.6rem 0.75rem;
-  border: 1px solid #3b2a4d; /* Borde sutil que combine con el fondo */
+  border: 1px solid #3b2a4d; 
   border-radius: 8px;
   box-sizing: border-box;
-  background: #1e142e; /* Apenas más claro que el fondo del form */
+  background: #1e142e; 
   color: #ffffff;
   outline: none;
   transition:
     border-color 0.2s ease,
     background 0.2s ease,
-    box-shadow 0.2s ease; /* Sumamos la sombra a la transición */
+    box-shadow 0.2s ease; 
 }
 
 /* Placeholder más tenue */
@@ -56,14 +56,14 @@
   color: #8874a3;
 }
 
-/* Hover/focus - Efecto Neón/Pop */
+/* Hover/focus */
 .product-form input[type="text"]:focus,
 .product-form input[type="number"]:focus,
 .product-form input[type="file"]:focus,
 .product-form textarea:focus {
   border-color: #ff2a85;
   background: #231736;
-  box-shadow: 0 0 8px rgba(255, 42, 133, 0.3); /* Glow del color principal */
+  box-shadow: 0 0 8px rgba(255, 42, 133, 0.3); 
 }
 
 /* Textarea */
@@ -82,17 +82,17 @@
   display: block;
   max-width: 220px;
   border-radius: 8px;
-  border: 2px dashed #ff2a85; /* Un borde punteado queda muy bien en esta estética */
+  border: 2px dashed #ff2a85; 
   margin-top: 0.35rem;
 }
 
-/* Botón principal reutilizable */
+/* Botón principal */
 .btn-admin {
   display: inline-block;
   padding: 0.6rem 1rem;
   border: none;
   border-radius: 8px;
-  background: #ff2a85; /* Color pop vibrante */
+  background: #ff2a85; 
   color: #ffffff;
   font-weight: bold;
   letter-spacing: 0.5px;
@@ -105,11 +105,11 @@
 
 .btn-admin:hover {
   background: #ff4797;
-  box-shadow: 0 4px 12px rgba(255, 42, 133, 0.4); /* Brillo al pasar el mouse */
+  box-shadow: 0 4px 12px rgba(255, 42, 133, 0.4); 
 }
 
 .btn-admin:active {
-  transform: translateY(2px); /* Un poco más de feedback táctil */
+  transform: translateY(2px); 
 }
 
 .btn-admin:disabled {
@@ -132,7 +132,7 @@
 .success-page {
   max-width: 720px;
   margin: 2rem auto;
-  padding: 3rem 1.5rem; /* Un poco más de padding vertical para respirar */
+  padding: 3rem 1.5rem; 
   background: #150e1f;
   color: #ffffff;
   border-radius: 12px;
@@ -145,7 +145,7 @@
 
 /* Ícono grande */
 .success-page .success-icon {
-  font-size: 4rem; /* Aumentado sutilmente para más impacto visual */
+  font-size: 4rem; 
   margin-bottom: 1rem;
   color: #ff2a85;
   text-shadow: 0 0 10px rgba(255, 42, 133, 0.4);
@@ -164,9 +164,8 @@
   margin-bottom: 1.5rem;
 }
 
-/* Error */
 .error {
-  color: #ff3333; /* Un rojo puro y brillante */
+  color: #ff3333; 
   font-weight: 600;
-  text-shadow: 0 0 5px rgba(255, 51, 51, 0.3); /* Leve glow para seguir la estética */
+  text-shadow: 0 0 5px rgba(255, 51, 51, 0.3); 
 }
